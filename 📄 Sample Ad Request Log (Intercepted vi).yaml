@@ -1,0 +1,181 @@
+📄 Sample Ad Request Log (Intercepted via Charles Proxy)
+
+POST https://ads.mopub.com/ad
+Headers:
+  Host: ads.mopub.com
+  User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)
+  X-Forwarded-For: 194.183.2.12
+  Content-Type: application/x-www-form-urlencoded
+
+Payload:
+  ad_unit_id=abc123xyz
+  bundle_id=com.fooducate.nutritionapp
+  device_id=a8f5f167f44f4964e6c998dee827110c
+  screen_resolution=1080x1920
+  os_version=iOS 16.3
+  sdk_name=AppLovin
+  sdk_version=11.2.3
+  placement_id=xyz_fraud_detect
+
+
+  [
+  {
+    "request": {
+      "url": "https://ads.applovin.com/ad",
+      "headers": [
+        {"name": "User-Agent", "value": "Dalvik/2.1.0 (Linux; U; Android 10; Pixel 3 Build/QP1A.190711.020)"},
+        {"name": "Content-Type", "value": "application/json"}
+      ],
+      "postData": {
+        "text": "{\"package\":\"io.supercent.downhill\",\"ad_unit_id\":\"applovin_123\",\"device_id\":\"abc123\"}"
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://track.appsflyer.com/install_data",
+      "headers": [
+        {"name": "User-Agent", "value": "okhttp/1.0"},
+        {"name": "Content-Type", "value": "application/json"}
+      ],
+      "postData": {
+        "text": "{\"package\":\"radio.saudi.arabia\",\"ad_unit_id\":\"applovin_123\",\"device_id\":\"abc123\"}"
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://ads.unity.com/request",
+      "headers": [
+        {"name": "User-Agent", "value": "Dalvik/2.1.0 (Linux; Android 9; SM-G960F)"},
+        {"name": "Content-Type", "value": "application/json"}
+      ],
+      "postData": {
+        "text": "{\"package\":\"com.appmind.radios.it\",\"ad_unit_id\":\"unity_456\",\"device_id\":\"xyz789\"}"
+      }
+    }
+  }
+]
+
+[
+  {
+    "request": {
+      "url": "https://ads.mopub.com/request",
+      "headers": [
+        {"name": "User-Agent", "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X)"},
+        {"name": "Content-Type", "value": "application/json"}
+      ],
+      "postData": {
+        "text": "{\"bundle_id\":\"com.peoplefun.wordcross\",\"ad_unit_id\":\"mopub_789\",\"device_id\":\"idfa_abc\"}"
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://track.liftoff.io/install",
+      "headers": [
+        {"name": "User-Agent", "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)"},
+        {"name": "Content-Type", "value": "application/json"}
+      ],
+      "postData": {
+        "text": "{\"bundle_id\":\"com.fooducate.nutritionapp\",\"ad_unit_id\":\"mopub_789\",\"device_id\":\"idfa_abc\"}"
+      }
+    }
+  },
+  {
+    "request": {
+      "url": "https://ads.applovin.com/request",
+      "headers": [
+        {"name": "User-Agent", "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X)"},
+        {"name": "Content-Type", "value": "application/json"}
+      ],
+      "postData": {
+        "text": "{\"bundle_id\":\"com.feelthemusi.musi\",\"ad_unit_id\":\"applovin_321\",\"device_id\":\"idfa_xyz\"}"
+      }
+    }
+  }
+]
+
+
+- io.supercent.downhill
+- io.supercent.plinko
+- com.appmind.radios.it
+- radio.online.romania
+- word.find
+- com.hwg.idlepainter
+
+
+- com.appmind.radios.it
+- radio.online.romania
+- radio.saudi.arabia
+- radio.player.ireland
+- radio.algerie.gratuite
+- radio.serbia
+
+
+● com.peoplefun.wordcross ● com.feelthemusi.musi● com.coloring.color.number.ios ● com.zynga.WordsWithFriends3
+
+
+📄 Log Sample — com.peoplefun.wordcross (Wordscapes)
+
+POST https://ads.mopub.com/ad
+Headers:
+  User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)
+  X-Forwarded-For: 193.168.34.11
+  Content-Type: application/x-www-form-urlencoded
+
+Payload:
+  ad_unit_id=wp3_adunit_2391
+  bundle_id=com.fooducate.nutritionapp
+  sdk_version=11.2.3
+  os_version=iOS 16.3
+  placement_id=pf_wordscapes_placement
+  screen_resolution=1080x1920
+
+  📄 Log Sample — com.feelthemusi.musi (Musi)
+
+POST https://ads.applovin.com
+Headers:
+  User-Agent: Musi-iOS/17.0
+  X-Forwarded-For: 188.233.94.21
+  Content-Type: application/json
+
+Payload:
+  ad_unit_id=musi_playback_ads
+  bundle_id=com.keyboard.kika.input
+  sdk=AppLovin SDK
+  sdk_version=10.4.1
+  spoofed_device_id=3981c9ae-ff67-4c2a-99a9-de1c3a0ea92c
+  spoofed_os_version=iOS 16.0
+
+  📄 Log Sample — com.coloring.color.number.ios (Color by Number)
+
+POST https://track.liftoff.io
+Headers:
+  User-Agent: UnityPlayer/2025.1.0f3 (UnityWebRequest/1.0)
+  X-Forwarded-For: 172.83.91.17
+  Content-Type: application/json
+
+Payload:
+  ad_unit_id=color_ads_groovepad_style
+  bundle_id=com.groovepad.musicapp
+  sdk_name=Unity Ads
+  spoofed_app_store_id=1454398991
+  session_clicks=22
+
+  📄 Log Sample — com.zynga.WordsWithFriends3
+
+POST https://ads.mopub.com/ad
+Headers:
+  User-Agent: WordsWithFriends3/iOS_17.0
+  X-Forwarded-For: 194.233.48.71
+  Content-Type: application/x-www-form-urlencoded
+
+Payload:
+  ad_unit_id=zynga_legacy_adslot
+  bundle_id=com.zynga.wordsclassic
+  sdk_name=MoPub
+  spoofed_app_store_id=1196764367
+  impression_id=abc123xyza987
+
+  
